@@ -1,22 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Coming Soon`,
+    title: `The Mikedrop`,
     author: {
       name: `Mike Dedys`,
-      summary: ``,
+      summary: `who lives and works as a contractor in Toronto`,
     },
-    description: ``,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {},
+    description: `Blog about development, fitness, and random things`,
+    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    social: {
+      instagram: "mikededys",
+      twitter: "",
+    },
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/blog`,
-    //     name: `blog`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -54,7 +57,7 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    // `gatsby-plugin-feed`,
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
