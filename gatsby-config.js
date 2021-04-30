@@ -3,7 +3,7 @@ module.exports = {
     title: `Mikedrop`,
     author: {
       name: `Mike Dedys`,
-      summary: `who lives and works as a contractor in Toronto`,
+      summary: `who lives and works in Toronto`,
     },
     description: `Blog about development, fitness, and random things`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
